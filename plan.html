@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Plan Your Event | A to Z Catering</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+              <!----Navagation-->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="catering.html">Catering</a>
+        <a href="events.html">Event Planning</a>
+        <a href="decoration.html">Decoration</a>
+        <a href="plan.html">Plan Your Event</a>
+    </nav> 
+
+
+
+    <h1>Plan Your Event</h1>
+    <h3 class="plan-intro">
+    Tell us about your special occasion and let A to Z Catering help make your event memorable.
+    </h3>
+
+    <form id="eventForm">
+
+    <!--- EVENT DATE -->
+
+    <section>
+       <h2>Event Details</h2>
+
+       <label>Event Date:<br>
+             
+          <input type="date" name="eventDate">
+    
+       </label>
+       
+       <br><br>
+
+      <!--- EVENT TIME -->
+
+       <label>Event Time:<br>
+             
+          <input type="time" name="eventTime">
+    
+
+       </label>    
+          
+   
+        <br><br>
+
+       <label>Event Type:</label>
+
+      <select name="eventType">
+            <option>Birthday</option>
+            <option>Wedding</option>
+            <option>Corporate Event</option>
+            <option>Other Special Event</option>
+
+      </select>
+
+      <br><br>
+
+    <label>Cuisine Preference:</label>
+     <select name="cuisine">
+    <option>Chinese</option>
+    <option>Malay</option>
+    <option>Indian</option>
+    <option>Western</option>
+</select>
+      
+      
+
+    </section>
+
+ <!-- This gives the customer a slider for the guest count-->
+    
+ 
+   <section>   
+    <h2>Guest Details</h2>
+
+    <label for="guests">Number of Guests:</label>
+
+  <div class="guest-slider">
+
+    <span>1</span>
+
+    <input type="range" id="guests" name="guests"
+           min="1" max="5000" value="100">
+
+    <span>5000</span>
+
+    <span id="guestNumber">100</span>
+
+</div>
+
+</section>
+
+<!---CUSTOMER DETAIL: NAMES, EMAIL , PHONE NUMBER-->
+
+
+<section>
+
+    <h2>Customer Details</h2>
+
+    <label>First Name:<br>
+        <input type="text" name="firstName">
+    </label>
+
+    <br><br>
+
+    <label>Last Name:<br>
+        <input type="text" name="lastName">
+    </label>
+
+    <br><br>
+
+    <label>Email:<br>
+        <input type="email" name="email">
+    </label>
+
+    <br><br>
+
+    <label>Phone Number:<br>
+        <input type="tel" name="phone">
+    </label>
+
+</section>
+
+<!----Services Required -->
+
+<section>
+
+    <h2>Services Required</h2>
+
+    <label>
+        <input type="checkbox" name="service" value="catering">
+        Catering
+    </label>
+
+    <br>
+
+    <label>
+        <input type="checkbox" name="service" value="eventPlanning">
+        Event Planning
+    </label>
+
+    <br>
+
+    <label>
+        <input type="checkbox" name="service" value="decoration">
+        Decoration
+    </label>
+
+</section>
+
+<!------Additional Requirements------>
+
+<section>
+
+    <h2>Additional Requirements</h2>
+
+    <label for="remarks">Tell us more about your event:</label><br>
+
+    <textarea id="remarks" name="remarks" rows="5" cols="40"></textarea>
+
+</section>
+
+<!--- submit button--->
+
+<section>
+
+    <h2>Submit Your Request</h2>
+
+    <p>Review your details before submitting your event request.</p>
+
+    <input type="submit" id="submitRequest" value="Submit Request">
+
+    <div id="quotationResult"></div>
+
+</section>
+ 
+
+
+
+
+
+
+
+
+
+
+
+</form>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
